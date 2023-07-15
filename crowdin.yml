@@ -1,0 +1,15 @@
+files:
+  - source: /upload/**/language/en-gb/**/*.php
+    ignore:
+      - /upload/**/language/en-gb/en-gb.php
+    translation: /upload/**/language/%locale%/**/%original_file_name%
+  - source: /upload/**/language/en-gb/en-gb.php
+    translation: /upload/**/language/%locale%/%locale%.php
+  - source: /upload/**/language/en-gb/en-gb.png
+    translation: /upload/**/language/%locale%/%locale%.png
+  - source: /INSTALL.md
+    translation: /%file_name%_%two_letters_code%.%file_extension%
+  - source: /UPGRADE.md
+    translation: /%file_name%_%two_letters_code%.%file_extension%
+  - source: /README.md
+    translation: /%file_name%_%two_letters_code%.%file_extension%
